@@ -1,2 +1,1 @@
-# wannasing.github.io
-juhazi.com1111
+juhazi.com
