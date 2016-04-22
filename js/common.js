@@ -110,6 +110,33 @@ require([], function (){
     $("#fold-comments").click(function(){
 		$(".comments-main").slideDown(500), $("#fold-comments").hide()
 	});
+    
+    var day=(new Date()).getDay();
+    var str='';
+    switch(day){
+        case 1:
+            str='今天星期一,懒床不想起!!!';
+            break;
+        case 2:
+            str='今天星期二,扯蛋好想撤!';
+            break;
+        case 3:
+            str='今天星期三,生活不简单->';
+            break;
+        case 4:
+            str='今天星期四,不想在做事...';
+            break;
+        case 5:
+            str='今天星期五,工作好辛苦.';
+            break;
+        case 6:
+            str='yeyeyeyeyeyeye-_-!!!';
+            break;
+        case 0:
+            str='加油玩,明天又要上班了!';
+            break;
+    }
+    $(".bottom-miss").children('span').html(str);
 
 	
 });
